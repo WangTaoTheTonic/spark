@@ -327,7 +327,7 @@ Apart from these, the following properties are also available, and may be useful
   <td><code>spark.ui.port</code></td>
   <td>4040</td>
   <td>
-    Port for your application's dashboard, which shows memory and workload data
+    Port for your application's dashboard, which shows memory and workload data.
   </td>
 </tr>
 <tr>
@@ -841,8 +841,7 @@ Apart from these, the following properties are also available, and may be useful
   <td><code>spark.scheduler.revive.interval</code></td>
   <td>1000</td>
   <td>
-    The interval length for the scheduler to revive the worker resource offers to run tasks.
-    (in milliseconds)
+    The interval length for the scheduler to revive the worker resource offers to run tasks (in milliseconds).
   </td>
 </tr>
 </tr>
@@ -854,7 +853,7 @@ Apart from these, the following properties are also available, and may be useful
     to wait for before scheduling begins. Specified as a double between 0 and 1.
     Regardless of whether the minimum ratio of resources has been reached,
     the maximum amount of time it will wait before scheduling begins is controlled by config 
-    <code>spark.scheduler.maxRegisteredResourcesWaitingTime</code> 
+    <code>spark.scheduler.maxRegisteredResourcesWaitingTime</code>.
   </td>
 </tr>
 <tr>
@@ -920,10 +919,10 @@ Apart from these, the following properties are also available, and may be useful
     standard <a href="http://docs.oracle.com/javaee/6/api/javax/servlet/Filter.html">
     javax servlet Filter</a>. Parameters to each filter can also be specified by setting a
     java system property of: <br />
-    <code>spark.&lt;class name of filter&gt;.params='param1=value1,param2=value2'</code><br />
+    <code>spark.&lt;class name of filter&gt;.params='param1=value1,param2=value2'</code><br />.
     For example: <br />
     <code>-Dspark.ui.filters=com.test.filter1</code> <br />
-    <code>-Dspark.com.test.filter1.params='param1=foo,param2=testing'</code>
+    <code>-Dspark.com.test.filter1.params='param1=foo,param2=testing'</code>.
   </td>
 </tr>
 <tr>
