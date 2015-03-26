@@ -63,8 +63,13 @@ private[spark] object PythonUtils {
   }
 
   private def doStartGatewayServer(startPort: Int): (GatewayServer, Int) => {
+    try {
     val server = new GatewayServer(null, port)
     server.start()
+    } catch {
+      case e: Py4JNetworkException =>
+        throw new BindException(e)
+    }
     (server, server.getListeningPort)
   }
 }
